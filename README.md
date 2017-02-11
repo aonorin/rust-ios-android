@@ -4,9 +4,9 @@ rust-ios-android
 Example project for building a library for iOS + Android in Rust. Mac OS X is
 required (because iOS).
 
-* ✓ Rust 1.12 – 1.13
-* ✓ Android 4.1 – 6.0
-* ✓ iOS 7.0 – 9.3
+* ✓ Rust 1.12 – 1.14
+* ✓ Android 4.1 – 7.0 (API 16–25)
+* ✓ iOS 7.0 – 10.2
 
 <small>(probably works on earlier versions but I don't bother to check 😛)</small>
 
@@ -112,7 +112,7 @@ does not contain proper error checking.)
     cd ../..
     ```
 
-    When you create an Xcode project yourself, note thefollowing points:
+    When you create an Xcode project yourself, note the following points:
 
     * Add the C header `rust_regex.h` to allow using the Rust functions from C.
     * Copy `target/universal/release/lib???.a` to the project. You may need
